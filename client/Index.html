@@ -13,13 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./image/logo.jpg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./js/cookie.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/load_func.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="cont name">
-                <h1><a href="index.html">GameWithTea</a></h1>
+                <h1><a href="/">GameWithTea</a></h1>
             </div>
             <div class="cont search">
                 <input class="searchinput" type="text">
@@ -29,8 +33,8 @@
             <div class="cont_auth">
                 <a href="" class = "cont authorization userbut"><img id="unknown_user" src="./image/unknow_user.png" 
                     width="40" height="40" alt="unknown_user"></a>
-                <a href="user.html"><span class="cont authorization user">Гость</span></a>
-                <a href="registration.html" class="cont authorization registration">Регистрация | Вход</a>
+                <a id = "user_name" href="user.html" class="cont authorization user">Гость</a>
+                <a id = "reg" href="registration.html" class="cont authorization registration">Регистрация | Вход</a>
             </div>
         </div>
         <div class="headermenu">
@@ -38,19 +42,20 @@
     </header>
     <main>
         <div class="container">
-            <div class="tabs">
+            <div class="games">
+<!--                <a id = "#game" href="game.html">Тетрис</a>-->
             </div>
             <div class="content">
             </div>
-            <div class="photos">
+            <div class="admins_button">
+
             </div>
         </div>
-    </main>
     </main>
     <footer>
         <div class="container">   
             <div class="all_contact">
-                <h4><a href="index.html">GameWithTea</a></h4>
+                <h4><a href="/">GameWithTea</a></h4>
                 <ul>
                     <li><a class="flink contacts">Контакты</a></li>
                     <li><a class="flink about" href="#">О нас</a></li>
@@ -61,7 +66,7 @@
             <div class="sitemap">
                 <h5>Карта сайта</h5>
                 <ul>
-                    <li><a class="flink" href="index.html">Домой</a></li>
+                    <li><a class="flink" href="/">Домой</a></li>
                     <!-- <li><a class="flink" href="#">Право</a></li> -->
                     <li><a class="flink support">Техподдержка</a></li>
                     <li><a class="flink" href="faq.html">ВиО</a></li>
